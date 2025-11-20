@@ -17,25 +17,25 @@
     "build:electron": "npm run build:web && electron-builder --win --x64"
   },
   "build": {
-  "appId": "com.jonah.tubejointdesigner",
-  "productName": "TubeJointDesigner",
-  "directories": {
-    "output": "dist"
+    "appId": "com.jonah.tubejointdesigner",
+    "productName": "TubeJointDesigner",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "electron/**/*",
+      "dist/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": ["nsis"]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true
+    }
   },
-  "files": [
-    "dist/**/*",
-    "electron/**/*",
-    "package.json"
-  ],
-  "win": {
-    "target": "nsis"
-  },
-  "nsis": {
-    "oneClick": false,
-    "perMachine": false,
-    "allowToChangeInstallationDirectory": true
-  }
-},
 
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -101,14 +101,13 @@
     "@types/react-dom": "^18.3.7",
     "@vitejs/plugin-react-swc": "^3.11.0",
     "autoprefixer": "^10.4.21",
-    "electron": "^39.2.3",
-    "electron-builder": "^26.0.12",
+    "concurrently": "^9.2.1",
+    "electron": "^26.0.0",
+    "electron-builder": "^24.6.0",
     "eslint": "^9.32.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^15.15.0",
-    "lovable-tagger": "^1.1.11",
-    "postcss": "^8.5.6",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.38.0",
