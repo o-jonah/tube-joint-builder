@@ -31,7 +31,7 @@ This application enables users to:
 
 ## 📋 Prerequisites
 
-- **Node.js** (v16 or higher) - [Download here](https://nodejs.org/)
+- **Node.js** (v16 or higher) 
 - **npm** (comes with Node.js) or **yarn**
 - **Git** for version control
 
@@ -40,8 +40,7 @@ This application enables users to:
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repository-url>
-cd tube-joint-visualizer
+git clone https://github.com/o-jonah/tube-joint-builder.git
 ```
 
 ### 2. Install Dependencies
@@ -235,4 +234,4 @@ For questions or support, please open an issue on GitHub.
 
 ---
 
-**Built with ❤️ for precision engineering visualization**
+**Built with ❤️ for precision engineering visualization by Jonah Odongo**
