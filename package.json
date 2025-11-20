@@ -15,6 +15,27 @@
     "preview": "vite preview",
     "build:electron": "npm run build:web && electron-builder --win --x64"
   },
+  "build": {
+  "appId": "com.jonah.tubejointdesigner",
+  "productName": "TubeJointDesigner",
+  "directories": {
+    "output": "dist"
+  },
+  "files": [
+    "dist/**/*",
+    "electron/**/*",
+    "package.json"
+  ],
+  "win": {
+    "target": "nsis"
+  },
+  "nsis": {
+    "oneClick": false,
+    "perMachine": false,
+    "allowToChangeInstallationDirectory": true
+  }
+},
+
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
     "@radix-ui/react-accordion": "^1.2.11",
