@@ -29,6 +29,29 @@ This application enables users to:
 - Responsive controls and parameter updates
 - Professional engineering aesthetic
 
+## ✅ Completed
+
+The following core features and tooling are implemented in this project:
+
+- **Tube Creation:** Add rectangular and square tubes to the scene with a single control action.
+- **Parameter Controls:** Live inputs for width, height, thickness, and length that update the 3D view in real time.
+- **3D Manipulation:** Position tubes in X/Y/Z and rotate with precise numeric controls and mouse-based camera controls.
+- **Rotation Snapping:** Snap rotations to common angles (45°, 90°) for precise mitering.
+- **View Modes:** Toggle between wireframe and solid rendering.
+- **Selection & Feedback:** Click-select tubes with visual highlighting for the active selection.
+- **Multiple Tubes & Assemblies:** Add and manage multiple tubes in one scene to build assemblies.
+- **Undo/Redo (basic):** Undo/redo support for recent edits (core functionality present).
+- **Joint Preview / Detection (initial):** Prototype joint detection and preview behavior when tubes are positioned close.
+- **Rendering Stack:** Real-time rendering using Three.js + React Three Fiber and helpers from `@react-three/drei`.
+- **Design System:** Dark CAD-style theme with Tailwind CSS and `shadcn/ui` components for a consistent UI.
+- **Type Safety & Tooling:** TypeScript config with strict options and `@` path aliases for cleaner imports.
+- **Vite Setup:** Vite dev tooling with `@vitejs/plugin-react-swc` configured and `@` alias resolved in `vite.config.ts`.
+- **Docs & Workflow:** `README.md` with setup, development, and build instructions; contribution workflow and roadmap.
+
+## Release Notes
+
+See the short release notes and changelog in `CHANGELOG.md` (v0.1.0 added on 2025-11-20).
+
 ## 📋 Prerequisites
 
 - **Node.js** (v16 or higher) 
