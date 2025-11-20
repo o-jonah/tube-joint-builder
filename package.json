@@ -3,17 +3,18 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
- "scripts": {
-  "start": "concurrently \"vite\" \"wait-on http://localhost:5173 && electron .\"",
-  "dev": "vite",
-  "build": "vite build",
-  "build:web": "vite build",
-  "build:dev": "vite build --mode development",
-  "lint": "eslint .",
-  "preview": "vite preview",
-  "build:electron": "npm run build:web && electron-builder --win --x64"
-},
-
+  "description": "Tube Joint Designer – Desktop App",
+  "author": "Jonah Odongo",
+  "scripts": {
+    "start": "concurrently \"vite\" \"wait-on http://localhost:5173 && electron .\"",
+    "dev": "vite",
+    "build": "vite build",
+    "build:web": "vite build",
+    "build:dev": "vite build --mode development",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "build:electron": "npm run build:web && electron-builder --win --x64"
+  },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
     "@radix-ui/react-accordion": "^1.2.11",
@@ -78,6 +79,7 @@
     "@types/react-dom": "^18.3.7",
     "@vitejs/plugin-react-swc": "^3.11.0",
     "autoprefixer": "^10.4.21",
+    "electron": "^39.2.3",
     "electron-builder": "^26.0.12",
     "eslint": "^9.32.0",
     "eslint-plugin-react-hooks": "^5.2.0",
