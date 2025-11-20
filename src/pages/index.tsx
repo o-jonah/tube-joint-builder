@@ -118,7 +118,7 @@ const Index = () => {
                 variant="secondary"
                 size="icon"
                 className="sm:hidden"
-                onClick={() => window.open('https://github.com', '_blank')}
+                onClick={() => window.open('https://github.com/o-jonah/tube-joint-builder', '_blank')}
               >
                 <Github className="w-4 h-4" />
               </Button>
