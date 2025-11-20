@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "main": "electron/main.js",
   "description": "Tube Joint Designer – Desktop App",
   "author": "Jonah Odongo",
   "scripts": {
