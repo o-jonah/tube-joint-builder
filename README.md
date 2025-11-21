@@ -99,14 +99,38 @@ npm run build
 
 The build output will be in the `dist/` directory.
 
-### Desktop App (Electron) - Coming Soon
+### Desktop App (Electron)
 
-Electron packaging configuration will be added for standalone desktop executables.
+This repository already includes an Electron entry (`electron/main.js`) and an `electron-builder` configuration in `package.json`. Use the scripts below to build and preview the app locally and to create a Windows installer.
 
-#### Planned Packaging Steps:
-1. Install Electron dependencies
-2. Configure electron-builder
-3. Build cross-platform executables (Windows, macOS, Linux)
+#### Packaging & Preview Steps
+
+1. Install dependencies:
+
+```powershell
+npm install
+```
+
+2. Create an optimized web build (Vite) and preview the production `dist` folder locally:
+
+```powershell
+npm run build
+npm run preview
+```
+
+Open the preview URL printed by `vite preview` to inspect the production build (the built `index.html` lives in `dist/`).
+
+3. Build the Electron Windows installer (x64):
+
+```powershell
+npm run build:electron
+```
+
+After packaging, look in the `dist/` output folder for the generated installer (NSIS `.exe`) or the platform-specific artifacts created by `electron-builder`.
+
+Notes:
+- If `electron-builder` fails, check the console for missing native build tools or permissions. On Windows you may need build tools for native modules.
+- If you only want to run the desktop app during development, run `npm run start` which runs the Vite dev server and opens Electron pointed at `http://localhost:5173`.
 
 ## 🎮 Usage Guide
 

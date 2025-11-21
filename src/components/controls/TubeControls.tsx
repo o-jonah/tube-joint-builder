@@ -229,7 +229,7 @@ export const TubeControls = ({
                   variant="secondary"
                   onClick={() => {
                     const currentDeg = selectedTube.rotation[1] * 180 / Math.PI;
-                    const newDeg = Math.round((currentDeg + 45) / 45) * 45;
+                    const newDeg = Math.round(currentDeg / 45) * 45;
                     onUpdateTube(selectedTube.id, {
                       rotation: [selectedTube.rotation[0], newDeg * Math.PI / 180, selectedTube.rotation[2]],
                     });
@@ -243,7 +243,7 @@ export const TubeControls = ({
                   variant="secondary"
                   onClick={() => {
                     const currentDeg = selectedTube.rotation[1] * 180 / Math.PI;
-                    const newDeg = Math.round((currentDeg + 90) / 90) * 90;
+                    const newDeg = Math.round(currentDeg / 90) * 90;
                     onUpdateTube(selectedTube.id, {
                       rotation: [selectedTube.rotation[0], newDeg * Math.PI / 180, selectedTube.rotation[2]],
                     });

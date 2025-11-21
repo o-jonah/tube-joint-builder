@@ -1,4 +1,4 @@
-import { TubeParameters } from '@/types/tubes';
+import { TubeParameters } from '@/types/tube';
 import * as THREE from 'three';
 
 export interface JointPreview {

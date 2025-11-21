@@ -6,16 +6,25 @@
   "main": "electron/main.js",
   "description": "Tube Joint Designer – Desktop App",
   "author": "Jonah Odongo",
-  "scripts": {
-    "start": "concurrently \"vite\" \"wait-on http://localhost:5173 && electron .\"",
-    "dev": "vite",
-    "build": "vite build",
-    "build:web": "vite build",
-    "build:dev": "vite build --mode development",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "build:electron": "npm run build:web && electron-builder --win --x64"
-  },
+"scripts": {
+  "start": "concurrently \"vite\" \"wait-on http://localhost:5173 && electron .\"",
+
+  "dev": "concurrently \"vite\" \"wait-on http://localhost:5173 && electron .\"",
+
+  "build": "vite build",
+  "build:web": "vite build",
+
+  "build:dev": "vite build --mode development",
+
+  "preview": "vite preview",
+
+  "lint": "eslint .",
+
+  "package": "npm run build:web && electron-builder",
+
+  "build:electron": "npm run package"
+},
+
   "build": {
     "appId": "com.jonah.tubejointdesigner",
     "productName": "TubeJointDesigner",
